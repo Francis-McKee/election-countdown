@@ -1,4 +1,4 @@
-// Set the date for Election Day
+// Countdown to Election Day
 const electionDate = new Date("November 5, 2024 00:00:00").getTime();
 
 function updateCountdown() {
@@ -21,3 +21,17 @@ function updateCountdown() {
 
 // Start the countdown
 updateCountdown();
+
+// Function to create a Google Calendar link for Election Day reminder
+function addCalendarReminder() {
+    const selectedDate = document.getElementById("reminder-timing").value;
+    const title = "Election Day Reminder";
+    const details = "Remember to vote!";
+    const location = "Your local polling place"; // General placeholder
+
+    // URL for Google Calendar event creation with the selected reminder date
+    const googleCalendarUrl = `https://calendar.google.com/calendar/r/eventedit?text=${encodeURIComponent(title)}&dates=${selectedDate}/${selectedDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
+
+    // Open the Google Calendar link in a new tab
+    window.open(googleCalendarUrl, '_blank');
+}
