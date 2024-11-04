@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+body {
+    align-items: center;
+}
+
+.voter-info {
+    text-align: left;
+}
