@@ -51,7 +51,7 @@ h1 {
     color: #e63946;
 }
 
-.reminder, .voter-info {
+.reminder, .voter-info, .survey-link {
     background-color: #f7f9fc;
     border: 1px solid #d1d8e0;
     border-radius: 8px;
@@ -59,7 +59,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.reminder h2, .voter-info h2 {
+.reminder h2, .voter-info h2, .survey-link h2 {
     font-size: 1.4em;
     color: #333;
     margin-bottom: 10px;
@@ -100,13 +100,18 @@ button:hover {
     color: #333;
 }
 
-.voter-info li a {
+.voter-info li a, .survey-link a {
     color: #1d3557;
     text-decoration: none;
     font-weight: bold;
 }
 
-.voter-info li a:hover {
+.voter-info li a:hover, .survey-link a:hover {
     color: #457b9d;
     text-decoration: underline;
+}
+
+.survey-link p {
+    font-size: 1.1em;
+    color: #3a3a3a;
 }
